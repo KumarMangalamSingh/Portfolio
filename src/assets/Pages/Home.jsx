@@ -4,7 +4,7 @@ import{StarBackground} from '../../Components/StarBackground'
 import Navbar from '../../Components/Navbar'
 import Hero from '../../Components/Hero'
 import About from '../../Components/About'
-import Skills from '../../Components/skills'
+import {Skills} from '../../Components/Skills'
 import { Project } from '../../Components/Project'
 import { Contact } from '../../Components/Contact'
 import { Footer } from '../../Components/Footer'
@@ -23,7 +23,7 @@ function Home() {
       {/* Main Content */}
       <Hero/>
       <About/>
-      <Skills/>
+     <Skills/>
       <Project/>
       <Contact/>
       {/* Footer */}

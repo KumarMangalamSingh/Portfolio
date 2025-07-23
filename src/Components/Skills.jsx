@@ -21,7 +21,7 @@ const skills = [
 
 const categories = ["all", "frontend", "backend", "tools"];
 
-function Skills() {
+export const Skills=()=> {
   const [activeCategory, setActiveCategory] = useState("all");
 
   return (
@@ -72,4 +72,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+
