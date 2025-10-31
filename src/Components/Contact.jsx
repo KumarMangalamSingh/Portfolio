@@ -1,4 +1,4 @@
-import { Github, LinkedinIcon, Mail, MapIcon, MapPin, Phone, Send, Twitter } from "lucide-react"
+import { Github, GithubIcon, LinkedinIcon, Mail, MapIcon, MapPin, Phone, Send, Twitter } from "lucide-react"
 import { useState } from "react";
 
 export const Contact=()=>{
@@ -10,10 +10,10 @@ export const Contact=()=>{
         formdata.append("access_key", "92786123-f172-4560-aa28-42bd6573ad44");
 
         const response=await fetch("https://api.web3forms.com/submit",{
-            method:"Post",
+            method:"POST",
             body:formdata
         });
-        const data=await response.json(response);
+        const data=await response.json();
 
         if(data.success){
             setResult("Form submitted successfully");
@@ -53,11 +53,11 @@ Say hello—I’d love to hear from you!
             <div className="space-y-6 justify-center">
                 <div className="flex items-start space-x-2">
                     <div className="p-3 rounded-full bg-primary/10">
-                      <Phone className="h-6 w-6 text-primary"/>  
+                      <GithubIcon  className="h-6 w-6 text-primary"/>
                     </div>
                     <div>
-                <a 
-                target="_blank" className="text-muted-foreground hover:text-primary transition-color">7903509112</a>
+                <a href="https://github.com/KumarMangalamSingh"
+                target="_blank" className="text-muted-foreground hover:text-primary transition-color">KumarMangalamSingh</a>
                 </div>
                 </div>
                 
@@ -68,10 +68,10 @@ Say hello—I’d love to hear from you!
         </div>
         <div className="bg-card p-8 rounded-lg shadow-xs mt-8">
                 <h3 className="text-2xl font-semibold mb-6">Send a Message </h3>
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={formsubmit}>
                     <label htmlFor="name">Your Name</label>
                     <input type="text" id="name" name="name" required
-                    placeholder="Kumar Mangalam..." 
+                    placeholder="Enter Name..." 
                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focud:ring-primary"/>
                 </form>
                 <form className="space-y-6">

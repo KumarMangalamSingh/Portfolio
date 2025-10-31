@@ -19,7 +19,10 @@ function Home() {
       {/* Background Effects */}
       <StarBackground/>
       {/* Navbar  */}
+      <div className='pt-2'>
       <Navbar/>
+      </div>
+      
       {/* Main Content */}
       <Hero/>
       <About/>
