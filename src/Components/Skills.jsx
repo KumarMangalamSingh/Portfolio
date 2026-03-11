@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
 
 const skills = [
+ 
+  { name: "React JS", level: 80, category: "frontend" },
+  { name: "Next JS", level: 60, category: "frontend" },
+  { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React JS", level: 80, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next JS", level: 60, category: "frontend" },
 
   { name: "Node Js", level: 80, category: "backend" },
   { name: "Express", level: 80, category: "backend" },
   { name: "PostgreSQL", level: 80, category: "backend" },
+  { name: "FastApi", level: 80, category: "backend" },
 
   { name: "Git/GitHub", level: 80, category: "tools" },
   { name: "Figma", level: 50, category: "tools" },
   { name: "Vs Code", level: 90, category: "tools" },
+  { name: "Claude Ai", level: 90, category: "tools" },
 
   { name: "C", level: 90, category: "all"},
-  { name: "C++", level: 90, category: "all"}
+  { name: "C++", level: 90, category: "all"},
+  {name:"Python",level:80,category:"all"}
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
